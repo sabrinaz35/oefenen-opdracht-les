@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>oefenen</h1>
+    <h1>Hallo</h1>
+    <section>
+        <fieldset>
+            <legend>Inloggen</legend>
+            <form action="">
+                 <label for="name">Naam</label>
+                 <input id="name" type="text" >
+     
+                 <label for="e-mailadress">E-mailadres</label>
+                 <input id="e-mailadress" type="email" required>
+     
+                 <label for="password">Password</label>
+                 <input id="password" type="password" required>
+     
+                 <label for="color">Kleur</label>
+                 <input id="color" type="color">
+     
+                 <label for="date">Datum</label>
+                 <input id="date" type="date">
+     
+                 <label for="file">Upload een file</label>
+                 <input id="file" type="file" accept="pdf">
+            
+                 <div>
+                    <p>favoriete dier</p>
+                    <input id="hond" type="radio" name="fav-dier" value="hond"> 
+                     <label for="hond">Hond</label>          
+                </div>
+                <div>
+                    <input id="kat" type="radio" name="fav-dier" value="kat"> 
+                    <label for="kat">kat</label>
+                </div>
+
+                 <label for="leeftijd">leeftijd</label>
+                 <input id="leeftijd" type="range" min="10" max="99">
+     
+                 <input id="submit" type="submit" value="Inloggen">
+            </form>
+         </fieldset>
+    </section>
+    
 </body>
 </html>

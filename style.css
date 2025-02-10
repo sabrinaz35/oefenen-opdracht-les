@@ -1,0 +1,35 @@
+section {
+    justify-content: center;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+fieldset {
+    width: 50vw;
+    display: flex;
+    background-color: antiquewhite;
+}
+
+fieldset form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+    padding: .5rem;
+    gap: .5rem;
+}
+
+#submit {
+    width: 15vw;
+    background-color: rgb(228, 74, 179);
+    padding: 1rem;
+}
+
+form input {
+    border-radius: 5px;
+}
+
+form input:focus {
+    background-color: aliceblue;
+    outline: solid 2px rgb(228, 74, 179);
+}
