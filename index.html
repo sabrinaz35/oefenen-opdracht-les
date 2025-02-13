@@ -7,46 +7,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hallo</h1>
-    <section>
-        <fieldset>
-            <legend>Inloggen</legend>
-            <form action="">
-                 <label for="name">Naam</label>
-                 <input id="name" type="text" >
-     
-                 <label for="e-mailadress">E-mailadres</label>
-                 <input id="e-mailadress" type="email" required>
-     
-                 <label for="password">Password</label>
-                 <input id="password" type="password" required>
-     
-                 <label for="color">Kleur</label>
-                 <input id="color" type="color">
-     
-                 <label for="date">Datum</label>
-                 <input id="date" type="date">
-     
-                 <label for="file">Upload een file</label>
-                 <input id="file" type="file" accept="pdf">
-            
-                 <div>
-                    <p>favoriete dier</p>
-                    <input id="hond" type="radio" name="fav-dier" value="hond"> 
-                     <label for="hond">Hond</label>          
-                </div>
-                <div>
-                    <input id="kat" type="radio" name="fav-dier" value="kat"> 
-                    <label for="kat">kat</label>
-                </div>
-
-                 <label for="leeftijd">leeftijd</label>
-                 <input id="leeftijd" type="range" min="10" max="99">
-     
-                 <input id="submit" type="submit" value="Inloggen">
-            </form>
-         </fieldset>
-    </section>
+    <main>
+        <h1>Hallo</h1>
+        <section>
+                <form action="./submitted.html"> 
+                    <!-- De action zorgt er dan voor dat het daadwerkelijk verstuurd wordt -->
+                     <label for="name">Naam</label>
+                     <input id="name" type="text" >
+         
+                     <label for="e-mailadress">E-mailadres</label>
+                     <input id="e-mailadress" type="email" required>
     
+                     <label for="phone">Telefoonnummer</label>
+                     <input id="phone" type="tel" required>
+         
+                     <label for="password">Password</label>
+                     <input id="password" type="password" required>
+    
+                     <label for="leeftijd">leeftijd</label>
+                     <input id="leeftijd" type="range" min="10" max="99">
+                     <input type="number">
+         
+                     <label for="color">Kleur</label>
+                     <input id="color" type="color">
+         
+                     <label for="date">Datum</label>
+                     <input id="date" type="date">
+                     <input id="date" type="datetime-local">
+         
+                     <label for="file">Upload een file</label>
+                     <input id="file" type="file" accept="pdf">
+    
+                     <fieldset>
+                        <legend>Woonplaats</legend>
+                            <input id="amsterdam" type="checkbox" name="woonplaats">
+                            <label for="amsterdam">Amsterdam</label>   
+
+                            <input id="Anders" type="checkbox" name="woonplaats">
+                            <label for="Anders">Anders</label>   
+                     </fieldset>
+                
+                     <div>
+                        <p>Heb je huisdieren?</p>
+                        <input id="hond" type="radio" name="fav-dier" value="hond"> 
+                         <label for="hond">Hond</label>            
+                    </div>
+                    <div>
+                        <input id="kat" type="radio" name="fav-dier" value="kat"> 
+                        <label for="kat">kat</label>
+                    </div>
+         
+                     <input id="submit" type="submit" value="Inloggen">
+                </form>
+        </section>
+    </main>  
 </body>
 </html>
